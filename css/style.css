@@ -1,5 +1,5 @@
 body{
-    width: 100vh;
+    width: 70%;
     margin: auto;
 }
 ul{
@@ -8,7 +8,7 @@ ul{
 li{
     display: flex;
     height: 9vh;
-    width: 9vh;
+    width: 10%;
     text-align: center;
     justify-content: center;
 }
@@ -21,6 +21,14 @@ li{
 
 
 }
-@media (max-width: 600px){
+@media (max-width: 900px){
+    li{
+    display: flex;
+    height: 9vh;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.5em;
     
+}
 }
