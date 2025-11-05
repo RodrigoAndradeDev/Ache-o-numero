@@ -1,0 +1,26 @@
+body{
+    width: 100vh;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: flex;
+    height: 9vh;
+    width: 9vh;
+    text-align: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 2em;
+
+
+}
+@media (max-width: 600px){
+    
+}
