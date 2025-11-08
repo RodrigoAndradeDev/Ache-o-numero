@@ -2,7 +2,6 @@ const container = document.getElementById('container') // criando a variavel do 
 const mensagem = document.getElementById('mensagem'); // criando a variavel numero conectado pelo id "numero"
 let numeroSorteado = Math.floor(Math.random()*100) +1; // escolhendo um numero de forma aleatoria entre 1 e 100
 
-console.log(numeroSorteado)
 
 let jogoAtivo = true;
 let maiorValorMenor = 0;
@@ -43,30 +42,21 @@ if (valor > numeroSorteado && valor < menorValorMaior) {
 
 contador++;
 
-console.log(valorMaior);
-console.log(valorMenor);
-console.log(maiorValorMenor);
-console.log(menorValorMaior);
-console.log(valor);
-console.log(contador);
-
-
-
 if(valor == numeroSorteado) {
     alvo.classList.add('certo');
-    mensagem.innerText = `Parabéns você acertou o número em (${contador}) tentativas`;
+    mensagem.innerText = `Parabéns você acertou o número em (${contador}) tentativas!`;
     jogoAtivo = false;
   }else if(numeroSorteado > maiorValorMenor && numeroSorteado < menorValorMaior && valorMaior && valorMenor)  {
     alvo.classList.add('errado');
-    mensagem.textContent = `Seu número está entre (${maiorValorMenor}) e (${menorValorMaior})`;
+    mensagem.textContent = `Seu número está entre (${maiorValorMenor}) e (${menorValorMaior})!`;
     
   } else if(valor > numeroSorteado) {
     alvo.classList.add('errado');
-    mensagem.innerText = `O número secreto é MENOR que ${valor}.`;
+    mensagem.innerText = `O número secreto é MENOR que ${valor}!`;
 
   } else if(valor < numeroSorteado) {
     alvo.classList.add('errado');
-    mensagem.innerText = `O número secreto é MAIOR que ${valor}`;
+    mensagem.innerText = `O número secreto é MAIOR que ${valor}!`;
   }
   window.scrollTo({
     top:0,

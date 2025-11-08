@@ -92,11 +92,13 @@ div{
     
 }
 #mensagem{
+    display: flex;
     font-size: 1.1em;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
     
 }
-p{
-    
-}
+
 }
