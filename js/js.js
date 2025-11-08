@@ -11,6 +11,7 @@ let valorMaior = false;
 let valorMenor = false;
 let contador = 0;
 
+mensagem.textContent = 'Escolha um número e tente a SORTE!'
 
 // for para criar os cards la no html por forma de repetiçao minimizando o codigo no html
 
@@ -29,7 +30,6 @@ container.addEventListener('click', (e) => { // identifica o evento de clique e 
 if(!alvo.dataset.valor || !jogoAtivo) return; // ele identifica se a pessoa clicou em uma area que sem valor e retorna caso isso aconteça
 
 let valor = parseInt(alvo.dataset.valor); // ele cria a variavel do valor que o usuario escolheu
-
 
 if (valor < numeroSorteado && valor > maiorValorMenor) {
   maiorValorMenor = valor;
@@ -68,6 +68,10 @@ if(valor == numeroSorteado) {
     alvo.classList.add('errado');
     mensagem.innerText = `O número secreto é MAIOR que ${valor}`;
   }
+  window.scrollTo({
+    top:0,
+    behavior: 'smooth'
+  });
 });
 
 
