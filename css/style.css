@@ -11,7 +11,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+    background: linear-gradient( 135deg, #f9eecc, #FFE9A8,  #f5bc49);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
 }
 
 
@@ -34,7 +38,10 @@ p{
     border: 1px solid black;
     width: 95%;
     height: 9vh;
-    margin: 10px;
+    margin: 30px 10px;
+    background-color: white;
+    box-shadow: 1px 1px 4px black;
+    
 }
 
 div{
@@ -63,6 +70,18 @@ div{
     background-color: red;
 }
 
+#btnReiniciar {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #f7b75d, #ffcc33);
+    color: #000;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
 
 
 
@@ -71,10 +90,11 @@ div{
 
 
 #mensagem{
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: 20px;
     font-weight: bold;
-    text-shadow: 2px 2px burlywood;
+    text-transform: uppercase;
+    background: linear-gradient( 135deg, #f9eecc, #FFE9A8,  #f8d080);
 }
 
 
@@ -92,13 +112,17 @@ div{
     
 }
 #mensagem{
+    text-transform: uppercase;
     display: flex;
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     padding: 0 15px;
+    background: linear-gradient( 135deg, #f9eecc, #FFE9A8,  #f8d080);
     
 }
 
+
 }
+

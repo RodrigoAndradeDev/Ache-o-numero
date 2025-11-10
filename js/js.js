@@ -46,6 +46,10 @@ if(valor == numeroSorteado) {
     alvo.classList.add('certo');
     mensagem.innerText = `Parabéns você acertou o número em (${contador}) tentativas!`;
     jogoAtivo = false;
+    document.getElementById('btnReiniciar').style.display = 'block';
+    document.getElementById('btnReiniciar').addEventListener('click', () => {
+    location.reload();
+});
   }else if(numeroSorteado > maiorValorMenor && numeroSorteado < menorValorMaior && valorMaior && valorMenor)  {
     alvo.classList.add('errado');
     mensagem.textContent = `Seu número está entre (${maiorValorMenor}) e (${menorValorMaior})!`;
@@ -62,6 +66,8 @@ if(valor == numeroSorteado) {
     top:0,
     behavior: 'smooth'
   });
+
+  
 });
 
 
